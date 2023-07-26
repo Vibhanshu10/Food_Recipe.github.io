@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD_RECEPIE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+    <header>
+      <div class="navContainer">
+           <nav>
+            <ul id="nav">
+                <li>
+                  <p id="navLogo">FOOD_RECEPIE</p>
+                </li>
+                <div>
+                   <input type="text" placeholder="Search...." class="search">
+                </div>
+                <li>
+                   <div id="navItems">
+                      <a href="index.html">Home</a>
+                      <a href="About.html">About</a>
+                      <a href="contact.html">Contact</a>
+                   </div>
+                </li>
+            </ul>
+            
+           </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="contentbox">
+         <section>
+            <div class="item">
+                <div class="leftBox">
+                   <div>
+                    <h1>Gulab Jamun</h1>
+                    
+                   </div>
+                   <div>
+                    <ul class="ingbox">
+                        <h3>Ingredients of Homemade Gulab Jamun</h3>
+                        <li>2 cups sugar</li>
+                        <li>5 cups water</li>
+                        <li>1 tsp milk</li>
+                        <li>1/4 tsp cardamom seeds</li>
+                        <li>1/2 tsp saffron</li>
+                        <li>1/2 tsp cardamom powder</li>
+                        <h3>For Gulab Jamun Balls</h3>
+                        <li>1 1/2 cups khoya, grated</li>
+                        <li>1/2 tsp baking soda</li>
+                        <li>1/2 cup maida</li>
+                        <li>1 tsp milk</li>
+                    </ul>
+                </div>
+                    <div>
+                        <ol class="recbox">
+                        <h2>Recipe</h2>
+                        <h4>Prepare Sugar Syrup:</h4>
+                        <li>Take required quantity of sugar and water in a deep pan. Stir and bring to boil on high flame for sugar to dissolve.</li>
+                        <li>Now add milk and cardamom seeds to the sugar water. Boil further and strain.</li>
+                        <li>Then add saffron and cardamom powder and bring the mixture to rolling boil for about 5-6 minutes until it becomes little sticky.</li>
+                        <h4>Prepare Gulab Jamun Balls:</h4>
+                        <li>Take the grated Khoya in a medium size deep bowl.</li>
+                        <li>Add baking soda and maida. Combine them thoroughly but gently using a spoon.</li>
+                        <li>Add a teaspoon of milk to it and knead all of them together to make a smooth and soft dough. Add another teaspoon of milk if required.</li>
+                        <li>Make sure that the dough is a bit softer to avoid cracking of ball while deep frying.</li>
+                        <li>Divide the dough into equal parts and make smooth surfaced balls out of it.</li>
+                        <li>Now heat ghee in a pan over medium flame and add the Jamun balls to deep-fry them. Cook evenly until it becomes golden brown.</li>
+                        <li>Make sure that you do not cook on high flame otherwise the balls will burn.</li>
+                        <li>Now drain and let them cool for few minutes.</li>
+                        <li>Then immerse the gulab jamuns in the warm sugar syrup for at least 30 minutes. It increases in size when it soaks the sugar syrup.</li>
+                        <li>Hot and tasty sweet dish is ready to serve.</li>
+                    </ol>
+                    </div>
+                   
+                </div>
+                <div class="rightBox">
+                  <img src="bread-gulab-jamun-recipe.jpg" alt="gulab jamun">
+                  <div class="overlay">
+                    <span>Click Here To Buy</span>
+                  </div>
+                </div>
+            </div>
+         </section>
+      </div>
+      <div class="box">
+      <ul  class="box1">
+        <li><a href="index.html" class="prev">Prev</a></li>
+        <li class="pagenumber "><a href="index.html">1</a></li>
+        <li class="pagenumber"><a href="food.html">2</a></li>
+        <li class="pagenumber"><a href="sandwich.html">3</a></li>
+        <li class="pagenumber"><a href="Dosa.html">4</a></li>
+        <li class="pagenumber"><a href="Dhokla.html">5</a></li>
+        <li class="pagenumber"><a href="Liti.html">6</a></li>
+        <li><a href="food.html" class="next">Next></a></li>
+      </ul>
+    </div>
+    </main>
+    
+
+    <section>
+        <div class="footer">
+            <p>Copyright &copy; Food_Recipe Pvt Ltd 2023 All Rights Reserved</p>
+        </div>
+    </section>
+   </div> 
+   <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $('.next').click(function(){
+         $('.box1').find('.pagenumber.active').next().
+         addClass('active');
+         $('.box1').find('.pagenumber.active').prev().
+         removeClass('active');
+      })
+    })
+    $(document).ready(function(){
+      $('.prev').click(function(){
+         $('.box1').find('.pagenumber.active').prev().
+         addClass('active');
+         $('.box1').find('.pagenumber.active').next().
+         removeClass('active');
+      })
+    })
+  </script>
+</body>
+</html>

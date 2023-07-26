@@ -1,0 +1,34 @@
+.heading{
+    text-align: center
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow:1px 1px 30px black;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutimage img{
+    height: 450px; 
+    width: 500px;
+    border-radius: 40px;
+    
+}
+.content p{
+    font-size: large;
+}
+
+.aboutimage{
+    border: 1px black;
+}
+.aboutimage:hover{
+    transform: scale(1.1);
+}
